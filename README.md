@@ -9,7 +9,7 @@
 ## 動画の指定区間(秒)を切り抜き
 
 ```
-python trim_video.py input.mp4 10 20 output.mp4
+python trim_video.py input.mp4 10 20
 ```
 
 ## 最初のフレームを画像として切り出し
