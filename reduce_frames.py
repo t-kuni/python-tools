@@ -31,7 +31,7 @@ def main():
     input_file_path = os.path.abspath(input_file)
     input_file_dir = os.path.dirname(input_file_path)
     input_file_name, input_file_ext = os.path.splitext(os.path.basename(input_file_path))
-    output_file_name = f"{input_file_name}-frame-catted{input_file_ext}"
+    output_file_name = f"{input_file_name}-frame-cut{input_file_ext}"
     output_file_path = os.path.join(input_file_dir, output_file_name)
 
     reduce_frames(input_file_path, output_file_path, frame_multiplier)
