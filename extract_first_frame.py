@@ -1,5 +1,6 @@
 import cv2
 import sys
+import os
 
 def extract_first_frame(input_video, output_image):
     # 動画を読み込む
@@ -18,11 +19,12 @@ def extract_first_frame(input_video, output_image):
     video.release()
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: python extract_first_frame.py <input_video> <output_image>")
+    if len(sys.argv) != 2:
+        print("Usage: python extract_first_frame.py <input_video>")
         sys.exit(1)
 
     input_video = sys.argv[1]
-    output_image = sys.argv[2]
+    file_root, file_ext = os.path.splitext(input_video)
+    output_image = file_root + '-first.png'
 
     extract_first_frame(input_video, output_image)

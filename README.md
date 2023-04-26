@@ -26,8 +26,15 @@ python extract_first_frame.py input.mp4 output.png
 python reduce_frames.py input_video.mp4 4
 ```
 
-## 動画の高さ、幅調整
+## 動画の高さ、幅を指定して切り出し（中央を起点に）
 
 ```
 python clip_video.py input.mp4 50 100
+```
+
+## 動画の幅縮小（アス比維持）
+
+```
+python resize_video.py input.mp4 640
+
 ```
