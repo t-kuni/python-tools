@@ -43,3 +43,9 @@ python resize_video.py input.mp4 640
 ```
 python gif_to_mp4.py input.mp4
 ```
+
+## 動画からXの倍数フレームを画像として切り出す
+
+```
+python extract_frames.py example.mp4 10
+```
